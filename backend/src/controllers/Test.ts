@@ -4,6 +4,8 @@ import { Body, Controller, Get, Header, Params, Post, Query } from "koa-ts-contr
 class TestController {
   @Get('/hello')
   async hello(){
+    throw new Error("xxxx");
+    
     return 'hello Test!'
   }
 
