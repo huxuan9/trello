@@ -10,7 +10,7 @@ class TestController {
   }
 
   // 
-  @Get('/user/:id')
+  @Get('/user/:id(\\d+)')
   async getUser(
     // @Params () p:{id:number}
     @Params('id') id :number
